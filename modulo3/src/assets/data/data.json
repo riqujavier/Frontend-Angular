@@ -1,0 +1,59 @@
+{
+    "name":"Javier Ariel Riquelme",
+    "backimage": "./assets/wallpaperflare.com_wallpaper.jpg",
+    "image": "./assets/javierriq.png",
+    "position": "Estudiante de YoProgramo 2022.",
+    "company": {
+        "name":"Argentina Programa 2022",
+        "img":"https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png",
+        "url": "#"
+    },
+    "school": {
+        "name":"Argentina Programa 2022",
+        "img":"./assets/arg-program.png",
+        "url":"#"
+    },
+    "ubicacion": "Buenos Aires (Argentina)",
+    "About": "Técnico de soporte en maquinas tragamonedas y ruletas. Formandose en el area de programación y diseño 3D.",
+    "experience": [{
+        "position":"IT Support Helper",
+        "company": "Selton S.A.",
+        "img": "./assets/selton.png",
+        "mode": "Jornada Completa",
+        "start": " Septiembre 2020",
+        "end": " Septiembre 2022",
+        "timeElapsed": "2 años"
+    }],
+    "educacion": [{
+        "school":"Argentina Programa 2022",
+        "title":"Programador",
+        "img":"./assets/arg-program.jpg",
+        "career":"FullStack Jr.",
+        "score": 0,
+        "start":"Febrero 2022",
+        "end":"Actualidad"
+
+    },
+     {
+        "school":"Da Vinci Primera Escuela de Arte Multimedial",
+        "title":"Diseñador 3D y Render",
+        "img":"./assets/da vinci.jpg",
+        "career":"3ds Max Keyshot+Vray Render Fotorrealista",
+        "score":0,
+        "start":"Agosto 2022",
+        "end":"Actualidad"
+     } , 
+     {
+        "school":"Juan XXIII",
+        "title":"Bachiller",
+        "img":"./assets/juan23.jpg",
+        "career":"Orientado en Ciencias Naturales",
+        "score":0,
+        "start": 2009,
+        "end": 2012
+
+     }
+]
+
+    
+}

@@ -1,0 +1,52 @@
+<div class= "card mat-card" id="aboutof">
+    <h1>Acerca de</h1>
+    <div id="info-jr">Técnico de soporte en maquinas tragamonedas y ruletas. Formandose en el area de programación y diseño 3D.</div>
+    <div class="btn-edit" onclick="cambiar_parrafo()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+    <div>
+        <input id ="edit-aboutof" type="text" oninput ="myFunction2(this.value)" style="display:none;">
+     </div>
+     <input type="file" id="file1" onchange="showFile(this);" > 
+</div>
+<script> 
+      
+    //funcion que 
+    //cambia el estilo del input a visible
+    //toma el valor del texto del parrafo como id "info-jr"
+    //lo muestra en consola
+    function cambiar_parrafo(){
+        document.getElementById("edit-aboutof").style.display="block";
+        let texto = document.getElementById ("info-jr").innerText;
+        console.log(texto);
+    };
+        function myFunction2(valor){
+            document.getElementById ("info-jr").innerText = valor;
+        }
+        function logMessage(message) {
+            console.log(message + "<br>");
+        }
+        //controla si se presiona enter 
+        let textarea = document.getElementById ("edit-aboutof")
+        textarea.addEventListener ("keyup", (e) => {
+            logMessage ( `Key "${e.key}" released [evente : keyup]` );
+            if (e.key== "Enter"){
+                document.getElementById ("edit-aboutof").style.display="none"
+            }
+        });
+
+        
+        //carga el contenido de un archivo de texto 
+        //y lo muestra en el parrafo
+
+        function showFile (input) {
+            let file = input.files[0]; 
+            alert('File name: ${file.name}'); //e g my png
+            reader.readAsText(file);
+            reader.onload = function() {
+                console.log(reader.result);
+                document.getElementById("info-jr").innerText = reader.result;
+            };
+            reader.onerror = function() {
+                console.log(reader.error);
+            };
+        }
+    </script>

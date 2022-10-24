@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+.mat-card{
+    border-radius: 64px;
+   margin-bottom: 0px;
+    padding: 20px ;
+    background-color: rgb(203, 215, 223) !important; 
+    border-color: rgba(9, 126, 126, 0.418) !important;
+    
+}
+div#first-card {
+    padding: 0%;   
+    
+}
+
+   
+div#perfil-fondo img {
+    background-repeat: no-repeat;
+    background-position: 5%;
+    border-radius: 8px;
+    background-size: auto;
+    display: flex;
+    z-index: auto;
+    max-height: 720px;
+    width: 100%;
+
+
+}
+div#info-data {
+    margin-left: 2%;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 270px;
+    height: 192px;
+    margin-top: -110px;
+    z-index: auto;
+}
+div#btn-pic {
+    margin-left: 12%;
+
+}
+div#info-actions {
+    display: block;
+    margin-left: 2%;
+    margin-bottom: 4%;
+}
+
+div #info-details {
+    margin-top: 38px;
+    padding-right: 2rem;
+    float: right;
+    font-size: 16px;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-right: 0%;
+}
+ol, ul {
+    list-style-type: none;
+    margin: 0;
+    
+
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(54, 116, 170);
+    padding: 30px;
+    border-radius: 3rem;
+}
+h1 {
+    margin-top: 1rem;
+}
+div#btn-about {
+    margin-left: 95%;
+    padding-bottom:0 ;
+    
+}
+
+div#work-information h3,p{
+  
+    float: inline-end;
+    padding-left: 2rem;
+   
+    
+}
+
+div#work-study h3,p{
+  
+    float: inline-end;
+    padding-left: 2rem;
+   
+}
+.conteiner-fluid {
+    padding-bottom: 12px;
+    padding-top: 12px;
+    display: flex;
+   align-items: center;
+}
+.progress{
+    width: auto;
+    
+
+}
+div#skills .btn-edit {
+    margin-left: 98%;
+    padding-bottom: 0%;
+    float: left;
+}

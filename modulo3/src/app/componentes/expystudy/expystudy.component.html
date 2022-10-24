@@ -1,0 +1,38 @@
+<div class="card mat-card" id="workexp">
+    <div id="work-information">    
+        <h1>Experiencia</h1>
+        <ul class="item-list"> 
+        <li *ngFor="let experiencia of experienceList">
+        <div class="conteiner-fluid">
+        <img class ="rounded float-left" [src]="experiencia.img" alt="Logo de Selton" style="height:90px;width: 90px;vertical-align: middle;">
+         <span><h3>{{experiencia.position}}</h3>
+            <p>{{experiencia.company}} - {{experiencia.mode}} </p>
+            <p><time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time> - {{experiencia.timeElapsed}}
+            Buenos Aires</p></span>
+            <div class="data-control">
+                <div class="btn-edit">
+                    <a href ="#" class="btn-right"><i class="fa fa-pen"></i></a>
+                </div>
+            </div>
+       </div></li></ul>
+       
+    </div>
+    <div id="work-study">
+        <ul class="items-list">
+        <h1>Educación</h1>
+        <li *ngFor="let educacion of educacionList">
+        <div class="conteiner-fluid">
+        <img class="rounded float-left" [src]="educacion.img" alt="Logo Arg. Programa" style="height:90px;width:90px;vertical-align: middle;">
+       <span style> <h3>{{educacion.school}} </h3> 
+        <p>{{educacion.title}} - {{educacion.career}}</p>
+        <p>     <time>{{educacion.start}} - </time>{{educacion.end}} </p> 
+    </span>
+        <div class="data-control">
+            <div class="btn-edit">
+                <a href ="#" class="btn-right"><i class="fa fa-pen"></i></a>
+            </div>
+        </div>
+    
+     </div></li></ul>
+    </div>  
+</div>
