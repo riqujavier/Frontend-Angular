@@ -1,11 +1,22 @@
-<div> 
+<div>  
     <div class="card mat-card " id="first-card"> 
-        <div id="perfil-fondo"> <img [src]="miPortfolio.backimage"> </div>
+        
+        <div id="perfil-fondo"> <nav class="menu" id="navegador">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/javier-ariel-riquelme-416b511b7/"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://www.facebook.com/javi1094"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/javier.riquelme0/"> <i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </nav>
+          <img [src]="miPortfolio.backimage"> </div>
+       
         <div id="info">
             <div id="info-img">
-                <img class="profile-image" [src]="miPortfolio.image" >
-                <div class="btn-edit" id="btn-pic"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+                <img id="perfil" class="profile-image" [src]="miPortfolio.image" >
+                <div id="attachment"><a href = "#"><i class="fa fa-pen" onclick="abrir()"></i></a></div>
+                <input id="input-file" type="file" accept="image/*" onchange="preview_image(event)" style="display:none"/>
             </div>
+            
         <div id="info-data">
             <h1> {{miPortfolio.name}}</h1>
             <div id="info-company">{{miPortfolio.position}} </div>
@@ -25,4 +36,8 @@
             <button type="button" class="btn btn-primary">Estoy interesado en</button>
             <button type="button" class="btn btn-light">Más</button>
         </div>
+        
+
+    
     </div>
+   

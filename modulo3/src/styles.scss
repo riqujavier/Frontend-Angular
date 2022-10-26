@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 .mat-card{
-    border-radius: 64px;
+    border-radius: 86px;
    margin-bottom: 0px;
     padding: 20px ;
     background-color: rgb(203, 215, 223) !important; 
@@ -11,13 +11,44 @@ div#first-card {
     padding: 0%;   
     
 }
+#navegador ul{
+    list-style-type: none;
+    text-align: right;;
+    z-index: 1;
+    background-color: #333333;
+    margin-bottom: 0%;
+    padding: 10px;
+    font-size: 2em;
+    position: fixed;
+    width: 100%;
+    
+ }
+ #navegador li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+    
+ }
+ #navegador li a {
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    border-radius: 60%;
+    
+ }
+ #navegador li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
 
    
 div#perfil-fondo img {
     background-repeat: no-repeat;
     background-position: 5%;
     border-radius: 8px;
-    background-size: auto;
+    background-size:contain;
     display: flex;
     z-index: auto;
     max-height: 720px;
@@ -28,7 +59,12 @@ div#perfil-fondo img {
 div#info-data {
     margin-left: 2%;
 }
+div#aboutof  .btn-right{
+    margin-left: 45%;
+  display: flex;
+  z-index: auto;
 
+}
 .profile-image {
     border-radius: 50%;
     width: 270px;
@@ -36,7 +72,7 @@ div#info-data {
     margin-top: -110px;
     z-index: auto;
 }
-div#btn-pic {
+div#attachment {
     margin-left: 12%;
 
 }
