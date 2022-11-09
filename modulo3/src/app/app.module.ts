@@ -8,6 +8,7 @@ import { AcercadeComponent } from './componentes/acercade/acercade.component';
 import { ExpystudyComponent } from './componentes/expystudy/expystudy.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import {HttpClientModule } from '@angular/common/http';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {HttpClientModule } from '@angular/common/http';
     EncabezadoComponent,
     AcercadeComponent,
     ExpystudyComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,
