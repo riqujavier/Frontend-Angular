@@ -149,11 +149,17 @@ div#skills .btn-edit {
     padding-bottom: 0%;
     float: left;
 }
-.proyect , p {
+.proyect , p   {
    
     font-size: large;
-    float: center;
     padding-left: 2rem;
     padding-top: 2rem;
+    z-index: -1;
    
+}
+.proyect .btn-right {
+margin: 20px;
+display: flex;;
+float: right;
+
 }
