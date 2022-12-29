@@ -9,6 +9,11 @@ import { ExpystudyComponent } from './componentes/expystudy/expystudy.component'
 import { SkillsComponent } from './componentes/skills/skills.component';
 import {HttpClientModule } from '@angular/common/http';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { PorfolioComponent } from './componentes/porfolio/porfolio.component';
+import { PortfolioService } from './servicios/portfolio.service';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -17,14 +22,18 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
     AcercadeComponent,
     ExpystudyComponent,
     SkillsComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    IniciarSesionComponent,
+    PorfolioComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
