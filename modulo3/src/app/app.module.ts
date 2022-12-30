@@ -7,12 +7,13 @@ import { EncabezadoComponent } from './componentes/encabezado/encabezado.compone
 import { AcercadeComponent } from './componentes/acercade/acercade.component';
 import { ExpystudyComponent } from './componentes/expystudy/expystudy.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
-import {HttpClientModule } from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PorfolioComponent } from './componentes/porfolio/porfolio.component';
 import { PortfolioService } from './servicios/portfolio.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { InterceptorService } from './servicios/interceptor.service';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule,
   ],
-  providers: [PortfolioService],
+  providers: [PortfolioService,{provide:HTTP_INTERCEPTORS,useClass:InterceptorService,multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

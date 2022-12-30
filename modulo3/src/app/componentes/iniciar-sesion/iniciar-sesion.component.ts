@@ -14,11 +14,11 @@ export class IniciarSesionComponent implements OnInit {
     {
       email:['',[Validators.required,Validators.email]],
       password:['',[Validators.required,Validators.minLength(8)]],
-    /*  deviceInfo:this.formBuilder.group({     //// PUEDE QUE ESTO NO VAYA !!
+     deviceInfo:this.formBuilder.group({     //// PUEDE QUE ESTO NO VAYA !!
         deviceId:["17867868768"],
         deviceType:["DEVICE_TYPE_ANDROID"],
         notificationToken:["67657575eececc34"]
-      })*/
+      })
     }
     )
   }
@@ -39,7 +39,7 @@ export class IniciarSesionComponent implements OnInit {
     this.autenticacionService.IniciarSesion(this.form.value).subscribe(data =>
     {
       console.log("DATA" +  JSON.stringify(data));
-      this.ruta.navigate(['portfolio']);
+      this.ruta.navigate(['/portfolio']);
     })
   }
 }
